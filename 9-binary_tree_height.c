@@ -9,12 +9,11 @@
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t count;
+	binary_tree_t *temp;
 
 	count = 0;
 	if (tree == NULL)
 		return (0);
-	binary_tree_t *temp;
-
 	temp = malloc(sizeof(binary_tree_t));
 	if (temp == NULL)
 		return (0);
